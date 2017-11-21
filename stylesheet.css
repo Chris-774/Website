@@ -1,25 +1,36 @@
 
 body {
 	margin: 0;
-	padding: 0;
-	background: #222;
 }
 
-header{ 
-	background: #ccc;
-	color: #444;
-	text-align: center;
- }
-
  h1{
- 	font font-size: 2.5em;
+ 	font-size: 1.25em;
+	text-align: center;
+	background: #444;
+	color: #eee; 
  	margin: 0;
- 	padding: 1em;
+ 	padding: 0.5em;
  }
 
  h2{
- 	font size: 1.5em;
+ 	margin-top: 0;
+	padding: 0.5em;
  }
+
+h3 {
+	font-size: 1.25em;
+	text-align: center;
+	padding: 0px;
+	margin: 1px;	
+}
+
+h4 {
+	font-size: 1.1em;
+	text-align: left;
+	padding: 0px;
+	margin: 0px;
+	text-decoration: underline;
+}
 
  main{
 	max-width: 1000px;
@@ -29,30 +40,125 @@ header{
 	padding: 2px;
  }
 
+	ul {
+	text-align: left;
+}
+
  section{
- 	font-size: 1em;
- 	background: #888;
- 	width: 22%;
- 	margin: 1em 1% 1em 1%;
- 	display: inline-block; 
+	 background: #888;
  }
 
+/* FOOTER */
+footer a:link,
+footer a:visited {
+	color: #444;
+}
+footer a:hover{
+	color: #888;
+}
+
+input,
+section {
+	display: none;
+	padding: 0.5em;
+	clear: both;
+}
+
+section footer{
+	position: absolute;
+	bottom: 0;
+	background: #ccc;
+	width: 100%;
+	margin-left: 0em;
+}
+
+section footer p{
+	padding: 0 1em;
+	line-height: 1.5em;
+	text-align: center;
+}
+
+/*
  section:hover {
  	background: #666;
  }
+*/
+
+label{
+	display: block;
+	box-sizing: border-box;
+	float: left;
+	width: 33.33%;
+	color: #888;
+	cursor: pointer;
+	text-decoration: none;
+	text-align: center;
+	background: #eee;
+	line-height: 3em;
+	border-right: 1px solid #444;
+}
 
 
-/* The first breakpoint for medium size screens */
+/*
+label span {
+	display: none;
+}
+*/
+label:last-child {
+	border-right:none;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3 {
+	display: block;
+}
+
+[id^="tab"]:checked + label {
+	background: #ccc;
+	color: #222;
+}
+
+[id^="tab"]:checked + label .fa {
+	color: #090;
+}
+
+.tab-content {
+	background: #fff;
+}
+
+.fa {
+	margin-right: 10px;
+}
+
+/* THE FIRST BREAKPOINT FOR MEDIUM SIZED SCREENS */
 @media screen and (min-width: 500px) {
+	header {
+		background: #222;
+		color: #ccc;
+	}
 
-
-
+	h1 {
+		font-size: 2em;
+	}
+	
+	main {
+		width: 90%;
+		margin: auto;
+	}
+	
 }
+/* END OF THE FIRST BREAKPOINT   */
 
 
-/* The second breakpoint for desktop size screens */
+
+/* THE SECOND BREAKPOINT FOR DESKTOP SIZED SCREENS */
 @media screen and (min-width: 1000px) {
-
+	header {
+		background: #222;
+		color: #ccc;
+	}
 
 
 }
+/* END OF THE SECOND BREAKPOINT */

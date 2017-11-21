@@ -2,43 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title> My Website </title>
+	<title> My Website </title>
   <link rel="stylesheet" href="stylesheet.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 
 <body>
 
 <header>
-	<h1> Welcome </h1>
+	<h1> Chris Brant </h1>				
 </header>
 
+		
 <main>
 
-  <section>
-    <h2> About Me </h2>
-    <p> Hey whats going, on my names Chris
-  </section>
-
-  <section>
-  	<h2> Qualifications </h2>
-  	<p> degree in awesomeness </p>
-  </section>
-
-  <section>
-  	<h2> Why you should hire me </h2>
-  	<p> Because im awesome </p>
-  </section>
-
-  <section>
-  	<h2> Contact Details </h2>
-  	<p> ring me up: xxxxx </p>
-  </section>
-
-
+	<input id="tab1" type="radio" name="tabs" checked>
+		<label for="tab1"><i class="fa fa-code"></i><span>About Me</span></label>
+		
+		<input id="tab2" type="radio" name="tabs">
+		<label for="tab2"><i class="fa fa-code"></i><span>Qualifications</span></label>
+		
+		<input id="tab3" type="radio" name="tabs">
+		<label for="tab3"><i class="fa fa-code"></i><span>Contact</span></label>
+		
+	
+	
+	<!-- Content for the first tab  -->
+		<section id="content1" class="tab-content">
+			<header> 
+				<h2> About Me </h2>
+			</header>
+				
+				<h3> Hello!</h3>
+				<p> Welcome to my website, this website is CV for potential employers </p>
+			
+			<h4> Profile </h4>
+				<ul> 
+					<li>I successfully completed Bronze level Duke of Edinburgh award on February 24th 2014. I am proud of this as the expedition part demonstrates that I have good communication skills and that I can successfully operate as part of a team.  
+					</li>
+					<li>For the volunteering aspect of DofE I organised, and performed in, a school talent show in memory of a student that passed away earlier in the year. The show ran smoothly showing that I can successfully manage and perform in an event.
+					</li>
+					<li>
+					I achieved the grades necessary to get into my chosen course at university. 
+					</li>
+					<li>
+					I attained the role of prefect at school, this shows that I am trusted in roles of responsibility. 
+					</li>
+					<li>
+					I successfuly balanced a part time job and school work for three years
+					</li>
+				</ul>
+					
+			<footer> 
+				<p> Thanks for checking out my website </p>
+			</footer>
+				
+		</section>
+		
+	
+	
+	
+		<!-- CONTENT FOR THE SECOND TAB -->
+		<section id="content2" class="tab-content">
+			<header>
+				<h2> Qualifications </h2>			
+			</header>
+			
+			<p>
+			Qualifications
+			</p>
+			<footer> 
+				<p> Thanks for checking out my website </p>
+			</footer>
+				
+		<!-- CONTENT FOR THE THIRD TAB -->
+		<section id="content3" class="tab-content">
+			<header>
+				<h2> Contact </h2>
+			</header>
+				
+			<footer> 
+				<p> Thanks for checking out my website </p>
+			</footer>				
+				
 </main>
 
-
+<script src="javacript.js"></script>
+		
 </body>
-
 </html>
