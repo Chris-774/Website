@@ -40,6 +40,10 @@ h4 {
 	padding: 2px;
  }
 
+p {
+	text-align: left;
+}
+
 	ul {
 	text-align: left;
 }
@@ -65,16 +69,16 @@ section {
 }
 
 section footer{
-	position: absolute;
+	position: fixed;
+	bottom: 1px;
 	bottom: 0;
 	background: #ccc;
 	width: 100%;
-	margin-left: 0em;
 }
 
 section footer p{
 	padding: 0 1em;
-	line-height: 1.5em;
+	line-height: 0.2em;
 	text-align: center;
 }
 
