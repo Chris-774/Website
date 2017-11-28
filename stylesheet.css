@@ -9,7 +9,7 @@ body {
 	background: #444;
 	color: #eee; 
  	margin: 0;
- 	padding: 0.5em;
+ 	padding: 2em;
  }
 
  h2{
@@ -44,6 +44,10 @@ p {
 	text-align: left;
 }
 
+#pTag {
+	padding-bottom: 3em;
+}
+
 	ul {
 	text-align: left;
 }
@@ -52,7 +56,7 @@ p {
 	 background: #888;
  }
 
-/* FOOTER */
+/* FOOTER 
 footer a:link,
 footer a:visited {
 	color: #444;
@@ -60,14 +64,14 @@ footer a:visited {
 footer a:hover{
 	color: #888;
 }
-
+ */
 input,
 section {
 	display: none;
 	padding: 0.5em;
 	clear: both;
 }
-
+/*
 section footer{
 	position: fixed;
 	bottom: 1px;
@@ -76,23 +80,19 @@ section footer{
 	width: 100%;
 }
 
+
 section footer p{
 	padding: 0 1em;
 	line-height: 0.2em;
 	text-align: center;
 }
-
-/*
- section:hover {
- 	background: #666;
- }
 */
 
 label{
 	display: block;
 	box-sizing: border-box;
 	float: left;
-	width: 33.33%;
+	width: 25%;
 	color: #888;
 	cursor: pointer;
 	text-decoration: none;
@@ -102,19 +102,15 @@ label{
 	border-right: 1px solid #444;
 }
 
-
-/*
-label span {
-	display: none;
-}
-*/
 label:last-child {
 	border-right:none;
+	
 }
 
 #tab1:checked ~ #content1,
 #tab2:checked ~ #content2,
-#tab3:checked ~ #content3 {
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4{
 	display: block;
 }
 
@@ -136,7 +132,7 @@ label:last-child {
 }
 
 /* THE FIRST BREAKPOINT FOR MEDIUM SIZED SCREENS */
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
 	header {
 		background: #222;
 		color: #ccc;
@@ -144,10 +140,11 @@ label:last-child {
 
 	h1 {
 		font-size: 2em;
+		padding: 10.5em;
 	}
 	
 	main {
-		width: 90%;
+		width: 100%;
 		margin: auto;
 	}
 	
@@ -157,7 +154,7 @@ label:last-child {
 
 
 /* THE SECOND BREAKPOINT FOR DESKTOP SIZED SCREENS */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 800px) {
 	header {
 		background: #222;
 		color: #ccc;
