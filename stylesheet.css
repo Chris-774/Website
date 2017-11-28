@@ -44,8 +44,14 @@ p {
 	text-align: left;
 }
 
-#pTag {
-	padding-bottom: 3em;
+dl {
+	margin: 0 auto;
+	padding: inherit;
+	text-align: left;
+}
+
+.pTag {
+	text-align: center;
 }
 
 	ul {
