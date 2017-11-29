@@ -1,5 +1,6 @@
 
 body {
+	height: 1420px;
 	margin: 0;
 }
 
@@ -137,8 +138,27 @@ label:last-child {
 	margin-right: 10px;
 }
 
+/*
+.sticky{
+	position: fixed;
+	top: 0;
+	width: 100%
+}
+
+.sticky + .tab-content{
+	padding-top: 60px
+}
+*/
+
+.navbar-fixed{
+	top: 0;
+	z-index: 100;
+	position: fixed;
+	width: 100%;
+}
+
 /* THE FIRST BREAKPOINT FOR MEDIUM SIZED SCREENS */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 450px) {
 	header {
 		background: #222;
 		color: #ccc;
