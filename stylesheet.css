@@ -63,38 +63,12 @@ dl {
 	 background: #888;
  }
 
-/* FOOTER 
-footer a:link,
-footer a:visited {
-	color: #444;
-}
-footer a:hover{
-	color: #888;
-}
- */
 input,
 section {
 	display: none;
 	padding: 0.5em;
 	clear: both;
 }
-
-/*
-section footer{
-	position: fixed;
-	bottom: 1px;
-	bottom: 0;
-	background: #ccc;
-	width: 100%;
-}
-
-
-section footer p{
-	padding: 0 1em;
-	line-height: 0.2em;
-	text-align: center;
-}
-*/
 
 label{
 	display: block;
@@ -112,7 +86,6 @@ label{
 
 label:last-child {
 	border-right:none;
-	
 }
 
 #tab1:checked ~ #content1,
@@ -139,7 +112,10 @@ label:last-child {
 	margin-right: 10px;
 }
 
-/*
+.top-container {
+	padding: 30px
+}
+
 .sticky{
 	position: fixed;
 	top: 0;
@@ -149,7 +125,6 @@ label:last-child {
 .sticky + .tab-content{
 	padding-top: 60px
 }
-*/
 
 .navbar-fixed{
 	top: 0;
