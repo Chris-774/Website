@@ -1,14 +1,29 @@
-      function initMap() {
-        let uluru = {lat: -25.363, lng: 131.044};
-        let map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
+
+"use strict" 
+
+function initMap() {
+	let Leicester = {lat: 52.6333, lng: -1.1333};
+	let dmu = {lat: 52.629311, lng: -1.137836};
+	let home = {lat: 51.051048, lng: 0.630622}; 
+  let mapDemo = document.getElementById("map") 
+				
+	let map = new google.maps.Map(mapDemo, {
+		zoom: 13,
+		center: Leicester
+	});
+	
+	let markerDMU = new google.maps.Marker({
+		position: dmu,
+		map: map,
+		title: 'My University'
         });
-        let marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
+	
+	let markerhome = new google.maps.Marker({
+		position: home,
+		map: map,
+		title: 'My Hometown'
+	});
+}
 
 
 
