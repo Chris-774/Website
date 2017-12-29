@@ -23,4 +23,10 @@ Evidence of feedback and user testing
 
 	During the Christmas holidays, I let my family have a play around on the website, one of the comments that they made was the colour scheme was quite boring. Now this is a fair point as all of the colours in the site are basically different shades of grey - however the reasoning for my chosen colour scheme was to not draw attention away from the content of the website. That is my reasoning anyway for why the website looks fairly bland. To try and address this issue I thought I would add in some logos for some of the companies that I have worked for - in addition to this I added in a shake function when you hover the mouse over the images almost as a little Easter egg - not sure it really keeps with the professional theme of the rest of the website but oh well. Additionally, I added custom scrollbar to jazz it up a bit, made the colour when you click on it maroon just to spice things up a bit.
 
+Navigation Plan
 
+	Navigation for my website is not particularly challenging. Being a one page design has the benefits of being ridiculously easy to navigate. For additional accessibility, I made sure to add <alt> tags to my images for use on screen readers. 
+	
+The Design
+	
+	I know the website does not look very impressive, there are definitely going to be people submitting ones with all of the bells and whistles, however I feel that my website is fit for purpose. I deliberately didn’t want to draw attention away from the content. The content should speak for itself without annoyances such as a bright colour scheme or fancy pop ups all over the place. I feel that I did the best that I could do, given that I struggled for so long with just trying to get JavaScript to work, yet the **** still doesn’t work. 
