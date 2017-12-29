@@ -1,102 +1,103 @@
 
+                      /*   MOBILE FIRST DESIGN   */
 body {
-	height: 500px;
-	margin: 0;
+  height: 500px;
+  margin: 0;
 }
 
-h1{
- 	font-size: 1.25em;
-	text-align: center;
-	background: #444;
-	color: #eee; 
- 	margin: 0;
- 	padding: 2em;
- }
+h1 {
+  font-size: 1.25em;
+  text-align: center;
+  background: #444;
+  color: #eee; 
+  margin: 0;
+  padding: 2em;
+}
 
-h2{
- 	margin-top: 0;
-	padding: 0.5em;
- }
+h2 {
+  margin-top: 0;
+  padding: 0.5em;
+}
 
 h3 {
-	font-size: 1.25em;
-	text-align: center;
-	padding: 0px;
-	margin: 1px;	
+  font-size: 1.25em;
+  text-align: center;
+  padding: 0px;
+  margin: 1px;	
 }
 
 h4 {
-	font-size: 1.1em;
-	text-align: left;
-	padding: 0px;
-	margin: 0px;
-	text-decoration: underline;
+  font-size: 1.1em;
+  text-align: left;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: underline;
 }
 
-main{
-
-	margin: 0 auto;
-	text-align: center;
-	padding: 2px;
- }
+main {
+  margin: 0 auto;
+  text-align: center;
+  padding: 2px;
+}
 
 p {
-	text-align: left;
+  text-align: left;
 }
 
 dl {
-	margin: 0 auto;
-	padding: inherit;
-	text-align: left;
+  margin: 0 auto;
+  padding: inherit;
+  text-align: left;
 }
 
 .pTag {
-	text-align: center;
+  text-align: center;
 }
 
 .indentP {
-	text-indent: 50px;
+  text-indent: 50px;
 }
 
-	ul {
-	text-align: left;
+ul {
+  text-align: left;
 }
 
 li {
-	margin: 0.5em;
+  margin: 0.5em;
 }
 
- section{
-	 background: #888;
- }
+section{
+  background: #888;
+}
 
+
+
+/* Navigation Bar */
 input,
 section {
-	display: none;
-	padding: 0.5em;
-	clear: both;
+  display: none;
+  padding: 0.5em;
+  clear: both;
 }
 
 label{
-	display: block;
-	box-sizing: border-box;
-	float: left;
-	width: 25%;
-	color: #888;
-	cursor: pointer;
-	text-decoration: none;
-	text-align: center;
-	background: #eee;
-	line-height: 3em;
-	border-right: 1px solid #444;
+  display: block;
+  box-sizing: border-box;
+  float: left;
+  width: 25%;
+  color: #888;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  background: #eee;
+  line-height: 3em;
+  border-right: 1px solid #444;
 }
 
-/* Below doesn't actually remove the border from the right */
-
+/* Below was my attempt to remove the border on the far right, yeah it doesn't work */
 label:last-child {
-	border-right:none;
+  border-right:none;
 }
-
 
 #tab1:checked ~ #content1,
 #tab2:checked ~ #content2,
@@ -106,42 +107,46 @@ label:last-child {
 }
 
 [id^="tab"]:checked + label {
-	background: #ccc;
-	color: #222;
+  background: #ccc;
+  color: #222;
 }
 
 [id^="tab"]:checked + label .fa {
-	color: #090;
+  color: #090;
 }
 
 .tab-content {
-	background: #fff;
+  background: #fff;
 }
 
 .fa {
-	margin-right: 10px;
+  margin-right: 10px;
 }
 
 .top-container {
-	padding: 30px
+  padding: 30px
 }
 
 .sticky{
-	position: fixed;
-	top: 0;
-	width: 100%
+  position: fixed;
+  top: 0;
+  width: 100%
 }
 
 .sticky + .tab-content{
-	padding-top: 60px
+  padding-top: 60px
 }
 
 .navbar-fixed{
-	top: 0;
-	z-index: 100;
-	position: fixed;
-	width: 100%;
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
 }
+
+
+
+/* Images */
 
 #markslogo {
 	height: 100px;
@@ -161,130 +166,143 @@ label:last-child {
 	margin: auto;
 	}
 
+
+
 	/* Custom scrollbar */
 
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+  background: #f1f1f1; 
 }
  
 
 ::-webkit-scrollbar-thumb {
-    background: #888; 
+  background: #888; 
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #800000;
+  background: #800000;
 }
 
 
-/* Stars for the Testemonials */
+
+/* Stars for the Testimonials */
 .checked {
-	margin-top: 1em;
-    color: orange;
-	float: left;
+  margin-top: 1em;
+  color: orange;
+  float: left;
 }
+                      /* END OF MOBILE FIRST DESIGN */
 
 
-/* THE FIRST BREAKPOINT FOR MEDIUM SIZED SCREENS */
+
+
+                     /* THE FIRST BREAKPOINT FOR MEDIUM SIZED SCREENS - Tablets */
+
 @media screen and (min-width: 450px) {
-	header {
-		background: #222;
-		color: #ccc;
-	}
 
-	h1 {
-		font-size: 2em;
-		padding: 10.5em;
-	}
+  head {
+    margin: 0 auto;
+    width: 99.4%;
+  }
+
+  header {
+    background: #222;
+    color: #ccc;
+  }
+
+  h1 {
+    font-size: 2em;
+    padding: 10.5em;
+  }
 	
-	main {
-		width: 100%;
-		height: 701px;
-		margin: auto;
-	}
+  main {
+    width: 99.4%;
+    height: 702px;
+    margin: 0 auto;
+  }
 	
-	body {
-		height: 810px;
-	}
+  body {
+    height: 810px;
+  }
 	
 }
-/* END OF THE FIRST BREAKPOINT   */
+                    /* END OF THE FIRST BREAKPOINT - TABLET */
 
 
 
-/* THE SECOND BREAKPOINT FOR DESKTOP SIZED SCREENS */
+                    /* THE SECOND BREAKPOINT FOR DESKTOP SIZED SCREENS */
+
 @media screen and (min-width: 800px) {
+		
+  main{
+    height: 700px;
+    width: 99.4%;
+    margin: 0 auto;
+  }
 
-				
-main{
-	height: 700px;
-	width: 100%;
-	margin: auto;
-	}
-header {
-	background: #222;
-	color: #ccc;
-	}
+  header {
+    background: #222;
+    color: #ccc;
+  }
 
-body {
-	height: 810px;
-	}
+  body {
+    height: 810px;
+  }
 	
-p {
-	padding-left: 2em;
-	padding-right: 2em;
-	}
+  p {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
 	
-#map {
-	height: 400px;
-	width: 400px;
-	z-index: -1;
-	}
+  #map {
+    height: 400px;
+    width: 400px;
+    z-index: -1;
+  }
 
-	#markslogo {
-	height: 166px;
-	width: 200px;
-	margin: -1em;
-}
+  #markslogo {
+    height: 166px;
+    width: 200px;
+  }
 
-#tgclogo {
-	height: 75px;
-	width: 320px;
-	margin: auto;
-}
+  #tgclogo {
+    height: 75px;
+    width: 320px;
+    margin: auto;
+  }
 
-#logolaton {
-	height: 80px;
-	width: 150px;
-	margin: auto;
-	}
+  #logolaton {
+    height: 80px;
+    width: 150px;
+    margin: auto;
+  }
 	
-/* Put in to show i can manipulate images in css, would have tried to do it in JS however nothing i do works in JS - i think my JS is broken as i get errors from the lab work and JS straight from reputable websites 
+  /* Put in to show i can manipulate images in css, would have tried to do it in JS however nothing i do works in JS - i think my JS is broken as i get errors from the lab work and JS straight from reputable websites 
 	
-Logically placed in the laptop sized section as you cant really hover a mouse over the images to activate it on a touchscreen */
+  Logically placed in the laptop sized section as you cant really hover a mouse over the images to activate it on a touchscreen */
 
-img:hover {
-  animation: shake 0.5s;
-  animation-iteration-count: infinite;
-}
+  img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
 
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
 	
 }
-/* END OF THE SECOND BREAKPOINT */
+                   /* END OF THE SECOND BREAKPOINT - DESKTOP */
