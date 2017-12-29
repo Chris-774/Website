@@ -42,7 +42,6 @@ main{
 
 p {
 	text-align: left;
-	text-indent: 50px;
 }
 
 dl {
@@ -53,6 +52,10 @@ dl {
 
 .pTag {
 	text-align: center;
+}
+
+.indentP {
+	text-indent: 50px;
 }
 
 	ul {
@@ -88,9 +91,12 @@ label{
 	border-right: 1px solid #444;
 }
 
+/* Below doesn't actually remove the border from the right */
+
 label:last-child {
 	border-right:none;
 }
+
 
 #tab1:checked ~ #content1,
 #tab2:checked ~ #content2,
@@ -157,6 +163,8 @@ label:last-child {
 
 
 
+/* Put in to show i can manipulate images in css, would have tried to do it in JS however nothing i do works in JS - i think my JS is broken as i get errors from the lab work and JS straight from reputable websites */
+
 img:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
@@ -177,8 +185,34 @@ img:hover {
 }
 
 
+	/* Custom scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
 
 
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #800000;
+}
+
+
+/* Stars for the Testemonials */
+.checked {
+	margin-top: 1em;
+    color: orange;
+	float: left;
+}
 
 
 /* THE FIRST BREAKPOINT FOR MEDIUM SIZED SCREENS */
@@ -237,6 +271,23 @@ p {
 	z-index: -1;
 	}
 
+	#markslogo {
+	height: 166px;
+	width: 200px;
+	margin: -1em;
+}
 
+#tgclogo {
+	height: 75px;
+	width: 320px;
+	margin: auto;
+}
+
+#logolaton {
+	height: 80px;
+	width: 150px;
+	margin: auto;
+	}
+	
 }
 /* END OF THE SECOND BREAKPOINT */
